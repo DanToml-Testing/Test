@@ -1,3 +1,4 @@
 test:
   override:
+    - echo "I AM A FORK. A HAPPY LITTLE FORK"
     - env
