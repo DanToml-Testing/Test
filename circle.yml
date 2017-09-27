@@ -1,3 +1,19 @@
-test:
-  override:
-    - env
+version: 2
+jobs:
+  b1:
+    docker:
+      - image: ruby:latest
+    steps:
+      - run: echo "Hello!"
+  b2:
+    docker:
+      - image: ruby:latest
+    steps:
+      - run: echo "Hello!"
+
+workflows:
+  version: 2
+  test_all:
+    jobs:
+      - b1
+      - b2
