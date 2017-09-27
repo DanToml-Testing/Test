@@ -1,15 +1,15 @@
 version: 2
 jobs:
   b1:
-    docker:
-      - image: ruby:latest
+    macos:
+      xcode: 8.2.1
     steps:
-      - run: echo "Hello!"
+      - run: ~/Library/Preferences/com.apple.dt.Xcode.plist
   b2:
-    docker:
-      - image: ruby:latest
+    macos:
+      xcode: 9.0.0
     steps:
-      - run: echo "Hello!"
+      - run: ~/Library/Preferences/com.apple.dt.Xcode.plist
 
 workflows:
   version: 2
