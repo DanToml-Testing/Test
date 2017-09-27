@@ -4,7 +4,7 @@ jobs:
     macos:
       xcode: 8.2.1
     steps:
-      - run: cat ~/Library/Preferences/com.apple.dt.Xcode.plist
+      - run: echo "Hello!"
   b2:
     docker:
       - image: ruby:latest
