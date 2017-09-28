@@ -6,10 +6,10 @@ jobs:
     steps:
       - run: cat ~/Library/Preferences/com.apple.dt.Xcode.plist
   b2:
-    macos:
-      xcode: "9.0"
+    docker:
+      - image: ruby:latest
     steps:
-      - run: cat ~/Library/Preferences/com.apple.dt.Xcode.plist
+      - run: echo "Helllllooo"
 
 workflows:
   version: 2
